@@ -23,21 +23,37 @@
 		"react-ga4": "^2.1.0",
 		"react-helmet": "^6.1.0",
 		"react-router-dom": "^6.11.1",
-		"react-scripts": "5.0.1",
 		"styled-components": "^5.3.10",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"start": "vite",
+		"dev": "vite",
+		"build": "vite build",
+		"test": "vitest",
+		"lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
 	},
 	"eslintConfig": {
 		"extends": [
-			"react-app",
-			"react-app/jest"
-		]
+			"eslint:recommended",
+			"plugin:react/recommended",
+			"plugin:@typescript-eslint/recommended",
+			"plugin:prettier/recommended"
+		],
+		"settings": {
+			"react": {
+				"version": "detect"
+			}
+		},
+		"rules": {
+			"prettier/prettier": [
+				"error",
+				{
+					"useTabs": true,
+					"tabWidth": 4
+				}
+			]
+		}
 	},
 	"browserslist": {
 		"production": [
@@ -54,5 +70,11 @@
 	"prettier": {
 		"useTabs": true,
 		"tabWidth": 4
+	},
+	"devDependencies": {
+		"@vitejs/plugin-react": "^4.3.1",
+		"vite": "^5.3.3",
+		"vitest": "^0.27.0",
+		"eslint": "^8.40.0"
 	}
 }
