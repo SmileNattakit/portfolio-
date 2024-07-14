@@ -57,7 +57,7 @@ const About = () => {
 
 			<div className="page-content">
 				<NavBar active="about" />
-				<div className="content-wrapper">
+				<div className="content-wrapper ">
 					<div className="about-logo-container flex justify-start pt-6">
 						<div className="about-logo fixed top-[4vh] border border-white rounded-full shadow-lg">
 							<Logo width={46} />

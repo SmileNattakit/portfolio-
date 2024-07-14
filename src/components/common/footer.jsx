@@ -8,7 +8,7 @@ const Footer = () => {
 		<React.Fragment>
 			<div className="footer">
 				<div className="footer-links">
-					<ul className="footer-nav-link-list">
+					<ul className="footer-nav-link-list flex gap-2">
 						<li className="footer-nav-link-item">
 							<Link to="/">Home</Link>
 						</li>

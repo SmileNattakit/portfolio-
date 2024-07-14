@@ -122,10 +122,10 @@ const Experiences = () => {
 					/>
 				</Helmet>
 
-				<div className="min-h-screen bg-gray-100">
+				<div className="page-content">
 					<NavBar active="experiences" />
 
-					<div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 bg-white">
+					<div className="content-wrapper">
 						<div className="about-logo-container flex justify-start pt-6">
 							<div className="about-logo fixed top-[4vh] border border-white rounded-full shadow-lg">
 								<Logo width={46} />
@@ -138,7 +138,7 @@ const Experiences = () => {
 							</div>
 							<p className="text-xl text-gray-600 mb-8"></p>
 
-							<div className="space-y-8">
+							<div className="space-y-8 h-[55vh] ">
 								{experiencesData.myExperiences.map(
 									(experience, index) => (
 										<ExperienceCard
