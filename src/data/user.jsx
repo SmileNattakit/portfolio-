@@ -1,82 +1,111 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
-		logo: "../logo.png",
+		name: "Nattakit Rattanakeha",
+		title: "Full Stack Developer | Entrepreneurial Strategist", // ปรับ title ให้เหมาะสม
+		email: "nattakit.rattanakeha@gmail.com",
+		logo: "../logo.png", // ตรวจสอบว่ามี logo.png หรือไม่ ถ้าไม่มีให้ลบหรือใส่ path ที่ถูกต้อง
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		github: "https://github.com/SmileNattakit",
+		linkedin: "https://www.linkedin.com/in/nattakit-rattanakeha/",
+		// เพิ่ม portfolio (ถ้ามี): "https://your-portfolio-link.com", // ถ้ามี portfolio ให้ใส่ link ตรงนี้
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
+		title: "Nattakit Rattanakeha",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			"Passionate coder and entrepreneurial strategist, weaving innovative solutions and nurturing business growth in the ever-evolving digital landscape.",
 	},
 
 	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
-		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
+		title: "Get to Know Me", // เปลี่ยน title ให้กระชับ
+		description: `
+A passionate software developer, With over 7 years of experience in restaurant management, I've honed my leadership, problem-solving, and communication skills, which I'm eager to apply to the tech industry. Recently graduated from Generation Thailand's Junior Software Developer Bootcamp, I'm proficient in the MERN stack and eager to contribute my skills to innovative projects. My unique background has instilled in me a strong work ethic, a collaborative spirit, and a passion for creating solutions that make a real difference in the world. I'm committed to continuous learning and growth, and I'm excited to embark on this new chapter in my career.`,
 	},
 
 	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+		// ถ้าไม่มี articles ให้ลบส่วนนี้ออก
+		title: "Articles & Thoughts",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.", // ปรับ description ตามความเหมาะสม
 	},
 
 	projects: [
 		{
-			title: "Project 1",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+			title: "JobSquare",
+			subTitle: "Talent Acquisition and Career Matching Platform",
+			description: [
+				"MERN Stack (MongoDB, Express.js, React, Node.js): Developed a modern, high-performance, and scalable platform for efficient job matching and talent acquisition.",
+				"User Authentication with JWT: Implemented secure login and registration processes to protect user data and ensure platform integrity.",
+				"Job Posting and Application: Streamlined the job posting and application process, facilitating seamless interaction between job seekers and employers.",
+				"State Management with Jotai: Utilized Jotai for efficient state management, enhancing application performance and responsiveness.",
+				"Integrated Cloudinary: Leveraged Cloudinary to optimize the storage, management, and delivery of media assets, including resumes and company logos.",
+			],
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			linkText: "View on GitHub",
+			link: "https://github.com/SmileNattakit/job-square-app",
+			linkServer:
+				"https://github.com/SmileNattakit/job-square-app-server",
+			deploymentLink: "https://job-square-app.vercel.app/", // replace with actual deployment link
+			status: "In Development",
+			img: "./project/jobsquare.png", // replace with actual image path
 		},
-
 		{
-			title: "Project 2",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 3",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 4",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+			title: "Voyage",
+			subTitle: "Curated Travel Package Platform",
+			description: [
+				"MERN Stack (MongoDB, Express.js, React, Node.js): Developed a modern, high-performance, and scalable platform for a seamless travel booking experience.",
+				"User Authentication with JWT: Implemented secure login and registration processes to protect user data and ensure platform integrity.",
+				"Package Browsing and Booking: Created an intuitive interface for browsing and booking travel packages from around the world.",
+				"State Management with Jotai: Utilized Jotai for efficient state management, enhancing application performance and responsiveness.",
+				"Integrated Cloudinary: Leveraged Cloudinary to optimize the storage, management, and delivery of media assets, including destination images.",
+			],
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			linkText: "View on GitHub",
+			link: "https://github.com/Atreides-Group-5/frontend",
+			linkServer: "https://github.com/Atreides-Group-5/backend",
+			deploymentLink: "https://voyage-frontend-chi.vercel.app", // replace with actual deployment link
+			status: "In Development",
+			img: "./project/voyage.png", // replace with actual image path
 		},
+	],
 
+	skills: [
+		// เพิ่มส่วนนี้สำหรับแสดงทักษะ
+		"MERN Stack",
+		"JavaScript",
+		"SQL",
+		"Tailwind",
+		"RESTful API",
+		"AI Tools",
+		"Prompt Engineering",
+		"Agile/Scrum",
+		"Team Management",
+		"Problem-Solving",
+		"Leadership",
+		"Communication",
+		"English (Intermediate)",
+		"Thai (Native)",
+	],
+
+	experience: [
+		// เพิ่มส่วนนี้สำหรับแสดงประสบการณ์ทำงาน
 		{
-			title: "Project 5",
+			title: "Junior Software Developer Bootcamp",
+			company: "Generation Thailand",
+			date: "April 2024 - August 2024",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+				"Learned to build web applications using React for the front-end, Node.js for the back-end, and MongoDB as a database. Acquired essential career-switching skills, such as growth mindset, effective communication, agile methodologies, and teamwork. Developed a final project (Voyage) demonstrating the ability to apply new skills in a practical setting.",
+		},
+	],
+
+	education: [
+		// เพิ่มส่วนนี้สำหรับแสดงการศึกษา
+		{
+			degree: "B.S. (Culinary Technology and Service)",
+			school: "Suan Dusit University",
+			year: "2017",
 		},
 	],
 };

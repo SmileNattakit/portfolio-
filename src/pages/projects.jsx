@@ -44,16 +44,22 @@ const Projects = () => {
 						</div>
 
 						<div className="subtitle projects-subtitle">
-							I've worked on a variety of projects over the years
-							and I'm proud of the progress I've made. Many of
-							these projects are open-source and available for
-							others to explore and contribute to. If you're
-							interested in any of the projects I've worked on,
-							please feel free to check out the code and suggest
-							any improvements or enhancements you might have in
-							mind. Collaborating with others is a great way to
-							learn and grow, and I'm always open to new ideas and
-							feedback.
+							I'm a newer developer, eager to learn and grow in
+							this exciting field, driven by a passion to make a
+							positive impact on the world through technology.
+							I've been dedicating my time to personal projects,
+							honing my skills and gaining practical experience.
+							These projects reflect my commitment to continuous
+							learning and my desire to create solutions that make
+							a difference. I'm always open to feedback and
+							collaboration, as I believe that working together is
+							key to achieving meaningful change. If you have any
+							suggestions or are interested in collaborating on
+							projects that can make a positive impact, please
+							don't hesitate to reach out. I'm excited to embark
+							on this journey of growth and contribution, and I'm
+							eager to leverage my skills to make a difference
+							alongside a talented team.
 						</div>
 
 						<div className="projects-list">

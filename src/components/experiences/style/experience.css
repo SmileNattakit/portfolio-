@@ -1,67 +1,69 @@
 @import "../../../data/styles.css";
 
-.article {
+.experience {
 	display: flex;
+	margin-bottom: 20px;
 }
 
-.article a {
-	text-decoration: none;
-}
-
-.article-left-side {
+.experience-left-side {
 	min-width: 20%;
 	max-width: 20%;
 }
 
-.article-right-side {
+.experience-right-side {
 	flex-basis: 80%;
 	min-width: 700px;
-	mix-blend-mode: normal;
+	background: #fafafa;
 	border-radius: 20px;
-	opacity: 0.8;
 	padding: 30px;
 }
 
-.article-right-side:hover {
-	background: #fafafa;
-	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
-}
-
-.article-date {
+.experience-date {
 	padding-top: 30px;
 	font-size: 15px;
 	color: var(--tertiary-color);
 }
 
-.article-title {
+.experience-title {
 	color: #000000;
 	font-size: 16px;
 	font-weight: 600;
+	margin-bottom: 10px;
 }
 
-.article-description {
-	padding-top: 10px;
-	font-size: 12px;
+.experience-description {
+	font-size: 14px;
 	color: var(--secondary-color);
-	font-weight: 480;
+	font-weight: 400;
 	line-height: 25px;
+	margin-bottom: 10px;
 }
 
-.article-link {
-	padding-top: 10px;
+.experience-toggle {
 	font-size: 14px;
 	color: var(--link-color);
 	font-weight: 700;
+	cursor: pointer;
+}
+
+.experience-details {
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+.experience-details li {
+	font-size: 14px;
+	color: var(--secondary-color);
+	margin-bottom: 5px;
 }
 
 @media (max-width: 1024px) {
-	.article-left-side {
+	.experience-left-side {
 		min-width: 10%;
 		max-width: 10%;
 	}
 
-	.article-right-side {
+	.experience-right-side {
 		flex-basis: 90%;
 		min-width: 85%;
 		max-width: 85%;

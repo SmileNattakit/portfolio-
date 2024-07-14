@@ -8,7 +8,7 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
 import INFO from "../data/user";
-import myArticles from "../data/articles";
+import myArticles from "../data/experiences";
 
 import "./styles/readArticle.css";
 

@@ -8,6 +8,7 @@ import {
 	faGithub,
 	faStackOverflow,
 	faInstagram,
+	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -19,7 +20,7 @@ import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+import myArticles from "../data/experiences";
 
 import "./styles/homepage.css";
 
@@ -67,7 +68,9 @@ const Homepage = () => {
 		borderRadius: stayLogo ? "50%" : "none",
 		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
 	};
-
+	const handleDownloadCV = () => {
+		window.location.href = "/cv/Nattakit_Rattanakeha_CV.pdf";
+	};
 	return (
 		<React.Fragment>
 			<Helmet>
@@ -94,10 +97,15 @@ const Homepage = () => {
 								<div className="title homepage-title">
 									{INFO.homepage.title}
 								</div>
-
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
 								</div>
+								<button
+									className="border mt-2 border-gray-300 hover:bg-gray-100 text-gray-800 font-medium py-2 px-4 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50"
+									onClick={handleDownloadCV}
+								>
+									Download CV
+								</button>
 							</div>
 
 							<div className="homepage-first-area-right-side">
@@ -114,7 +122,7 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-socials">
-							<a
+							{/* <a
 								href={INFO.socials.twitter}
 								target="_blank"
 								rel="noreferrer"
@@ -123,7 +131,7 @@ const Homepage = () => {
 									icon={faTwitter}
 									className="homepage-social-icon"
 								/>
-							</a>
+							</a> */}
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -134,7 +142,7 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
-							<a
+							{/* <a
 								href={INFO.socials.stackoverflow}
 								target="_blank"
 								rel="noreferrer"
@@ -143,14 +151,14 @@ const Homepage = () => {
 									icon={faStackOverflow}
 									className="homepage-social-icon"
 								/>
-							</a>
+							</a> */}
 							<a
-								href={INFO.socials.instagram}
+								href={INFO.socials.linkedin}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faInstagram}
+									icon={faLinkedin}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -167,9 +175,9 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-							<AllProjects />
+							{/* <AllProjects /> */}
 						</div>
-
+						{/* 
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
 								{myArticles.map((article, index) => (
@@ -191,7 +199,7 @@ const Homepage = () => {
 							<div className="homepage-works">
 								<Works />
 							</div>
-						</div>
+						</div> */}
 
 						<div className="page-footer">
 							<Footer />
